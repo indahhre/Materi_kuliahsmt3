@@ -1,27 +1,27 @@
-#Membuat Class
-class mobil :
-      Jumlah_mobil = 0
+#Membuat Perpustakaan
+class Buku :
+      Jumlah_buku = 0
       # Membuat Construktor
-      def __init__(self, ban, merk, cc):
+      def __init__(self, judul, penulis, tahun):
           # Instance Variabel
-          self.merkban = ban
-          self.merkmobil = merk
-          self.kapasitas = cc
-          mobil.Jumlah_mobil += 1
+          self.judul = judul
+          self.penulis = penulis
+          self.tahun = tahun
+          Buku.Jumlah_buku += 1
      #Membuat Method String 
       def __str__(self):
-           return f"{self.merkban}, {self.merkmobil}, {self.kapasitas}"
+           return f"{self.judul}, {self.penulis}, {self.tahun}"
       #Membuat Method Baru Bore up
       def boreup(self, bore):
-           self.kapasitas += bore
+           self.tahun += bore
            
 #Membuat Objek Baru M1
-M1 = mobil("Brigestone", "Toyota-Kijang", 1500)
-print(M1)
-print("Jumlah Mobil:", mobil.Jumlah_mobil)
-M1.boreup(500)
-print(M1)
+B1 = Buku("Abighea", "Chelsea Karina", 2021)
+print(B1)
+print("Jumlah buku:", Buku.Jumlah_buku)
+B1.boreup(500)
+print(B1)
 #Membuat Objek Baru M2
-M2 = mobil("Pirelli", "Subaru", 2000)
-print(M2)
-print("Jumlah Mobil:", mobil.Jumlah_mobil)
+B2 = Buku("Rindu", "Tere Liye", 2014)
+print(B2)
+print("Jumlah buku:", Buku.Jumlah_buku)
